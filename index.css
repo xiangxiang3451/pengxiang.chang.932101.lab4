@@ -1,0 +1,142 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-size: 15px;
+    background-color: #edeef0;
+}
+header {
+    position:fixed;
+    width: 100%;
+    background-color: #507299;
+    z-index:10;
+}
+footer {
+    text-align: center;
+    color: #507299;
+    background-color: white;
+    padding: 5px;
+    margin-bottom:0;
+    margin-top:20px;
+}
+.image{
+    padding:5px 10%;
+}
+.left_column{
+    margin-top:60px;
+}
+.list {
+    margin-right:20px;
+    list-style: none;
+    width: 190px;
+   
+}
+li{
+    padding:5px;
+}
+a {
+    color: #2e5473;
+    text-decoration: none;
+}
+li:hover{
+    background-color:#e1e5eb;
+}
+.box {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px #d0d0d0;
+    z-index:1;
+}
+.box:first-child{
+    margin-top:60px;
+}
+    .box p::selection {
+        color:green;
+        background-color: #e1e5eb;
+    }
+.image2 img{
+    width:100%;
+    height:auto;
+}
+.bigline {
+    margin-left:-20px;
+    width:440px;
+    height: 2px;
+    background-color: #d0d0d0;
+}
+.line {
+    width: 100%;
+    margin-top:5px;
+    height:2px;
+    background-color: #d0d0d0;
+}
+.location_button {
+    display: flex;
+    justify-content: space-between;
+}
+.under_text {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    color: #2e5473;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    margin:0 auto;
+    margin-left:12%;
+}
+.small_box1 {
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    right: 15%;
+    font-size: 10px;
+    width: 150px;
+    background-color: white;
+    border: solid 1px #d0d0d0;
+    border-radius: 10px;
+}
+.small_box2 {
+    padding:10px;
+    position: fixed;
+    top: 220px;
+    right: 15%;
+    font-size: 10px;
+    width: 150px;
+    background-color: white;
+    border: solid 1px #d0d0d0;
+    border-radius: 10px;
+}
+.back {
+    margin:10px;
+    background-color: #e1e5eb;
+}
+@media screen and (max-width:1024px){
+    .hidden_block{
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+    .hidden_block{
+        display:none;
+    }
+    .list{
+        list-style:none;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        width:350px;
+    }
+    li{
+       padding:5px;
+    }
+}
